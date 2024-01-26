@@ -1,25 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import PlayersList from './Components/PlayersList'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+    <h1 style={{textAlign:"center", color:"burlywood"}}>LISTE DES JOUEURS</h1>
+    <PlayersList/>
+      {/* <Players />
+      {player.map((ply) => (
+        <Players key={ply.id} {...ply} />
+      ))} */}
     </div>
   );
 }
-
 export default App;
